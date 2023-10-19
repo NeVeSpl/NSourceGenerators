@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Profile DebugRoslyn": {
+      "commandName": "DebugRoslynComponent",
+      "targetProject": "..\\CodeToString.Sample\\CodeToString.Sample.csproj"
+    }
+  }
+}

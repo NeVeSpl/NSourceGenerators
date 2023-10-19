@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<IsRoslynComponent>true</IsRoslynComponent>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<IncludeBuildOutput>false</IncludeBuildOutput>
+		<Version>0.1.0</Version>
+		<Authors>NeVeSpl</Authors>
+		<Company>NeVeSpl</Company>
+		<Copyright>(c) NSourceGenerators.CodeToString</Copyright>
+		<PackageProjectUrl>https://github.com/NeVeSpl/NSourceGenerators</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/NeVeSpl/NSourceGenerators</RepositoryUrl>
+		<NeutralLanguage>en</NeutralLanguage>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<Description>Roslyn source generator that turns c# source code into a string literal</Description>
+		<LangVersion>Latest</LangVersion>
+		<EnforceExtendedAnalyzerRules>true</EnforceExtendedAnalyzerRules>
+		<EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>
+		<RootNamespace>NSourceGenerators</RootNamespace>
+		<PackageId>NSourceGenerators.CodeToString</PackageId>
+		<AssemblyName>NSourceGenerators.CodeToString</AssemblyName>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <Compile Remove="bin\**" />
+	  <EmbeddedResource Remove="bin\**" />
+	  <None Remove="bin\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.CodeAnalysis.Analyzers" Version="3.3.4" PrivateAssets="all" />
+		<PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="3.11.0" PrivateAssets="all" />
+	</ItemGroup>
+
+
+	<ItemGroup>
+		<None Include="$(OutputPath)\$(AssemblyName).dll" Pack="true" PackagePath="analyzers/dotnet/cs" Visible="false" />
+	</ItemGroup>
+</Project>
