@@ -2,6 +2,9 @@
 
 ## NSourceGenerators.CodeToString
 
+[![Nuget](https://img.shields.io/nuget/v/NSourceGenerators.CodeToString?color=%23004880&label=NSourceGenerators.CodeToString)](https://www.nuget.org/packages/NSourceGenerators.CodeToString)
+
+
 Roslyn source generator that turns c# source code decorated with [CodeToString] atribute into a string literal.
 
 
