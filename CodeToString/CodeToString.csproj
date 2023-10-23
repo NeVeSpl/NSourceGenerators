@@ -13,7 +13,7 @@
 		<RepositoryUrl>https://github.com/NeVeSpl/NSourceGenerators</RepositoryUrl>
 		<NeutralLanguage>en</NeutralLanguage>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
-		<Description>Roslyn source generator that turns decorated c# source code with [CodeToString] into a string literal</Description>
+		<Description>Roslyn source generator that turns c# source code decorated with [CodeToString] atribute into a string literal.</Description>
 		<LangVersion>Latest</LangVersion>
 		<EnforceExtendedAnalyzerRules>true</EnforceExtendedAnalyzerRules>
 		<EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>
