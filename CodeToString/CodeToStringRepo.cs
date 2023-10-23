@@ -4,7 +4,7 @@ namespace NSourceGenerators
 {
     internal static class CodeToStringRepo
     {
-        private static readonly Dictionary<string, string> map;
+        private static readonly Dictionary<string, string> map = new Dictionary<string, string>();
 
 
         public static string GetText(string index)

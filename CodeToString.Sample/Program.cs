@@ -1,15 +1,19 @@
-﻿using NSourceGenerators;
+﻿using System.ComponentModel;
+using NSourceGenerators;
 
 namespace CodeToString.Sample
 {
+    [CodeToString]
     partial class Program
     {
-        [CodeToString]
+        [CodeToString, Browsable(false)]       
         static void Main(string[] args)
         {
-            HelloFrom(CodeToStringRepo.GetText("CodeToString.Sample.Program.Main"));         
-        }
-            
-        static partial void HelloFrom(string name);         
+            var mainCode = CodeToStringRepo.GetText("CodeToString.Sample.Program.Main");
+            Console.WriteLine(mainCode);
+
+            var programCode = CodeToStringRepo.GetText("CodeToString.Sample.Program");
+            Console.WriteLine(programCode);
+        }        
     }
 }
