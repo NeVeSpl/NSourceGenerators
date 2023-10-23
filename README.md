@@ -5,9 +5,12 @@
 [![Nuget](https://img.shields.io/nuget/v/NSourceGenerators.CodeToString?color=%23004880&label=NSourceGenerators.CodeToString)](https://www.nuget.org/packages/NSourceGenerators.CodeToString)
 
 
-Roslyn source generator that turns c# source code decorated with [CodeToString] atribute into a string literal.
+Roslyn source generator that turns c# source code decorated with `[CodeToString]` atribute into a string literal.
 
+- `[CodeToString]` attribute can be placed on: classes, structs and methods
+- access to generated string representation is provided through static method: `CodeToStringRepo.GetText("full type name is used as a key")`
 
+### Demo
 
 Input
 ```csharp
