@@ -13,6 +13,8 @@ Roslyn source generator that turns c# source code decorated with `[CodeToString]
 - user can provide custom keys, if not provided, full symbol name with namespace is used as a key
 ### Demo
 
+A simple console app, that writes its own code to console output:
+
 Input
 ```csharp
 using NSourceGenerators;
