@@ -5,7 +5,7 @@
 		<IsRoslynComponent>true</IsRoslynComponent>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<IncludeBuildOutput>false</IncludeBuildOutput>
-		<Version>0.1.0</Version>
+		<Version>0.2.0</Version>
 		<Authors>NeVeSpl</Authors>
 		<Company>NeVeSpl</Company>
 		<Copyright>(c) NSourceGenerators.CodeToString</Copyright>
