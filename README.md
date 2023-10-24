@@ -10,7 +10,7 @@ Roslyn source generator that turns c# source code decorated with `[CodeToString]
 - `[CodeToString]` attribute can be placed on: classes, structs and methods
 - access to generated string representation is provided through static method: `CodeToStringRepo.GetText("key")`
 - generated code uses raw string literals ``` that were introduced in C# 11
-- user can provide custom key name, if not, full symbol name is used as a key
+- user can provide custom keys, if not provided, full symbol name with namespace is used as a key
 ### Demo
 
 Input
