@@ -2,7 +2,7 @@
 
 namespace NSourceGenerators
 {
-    internal static class CodeToStringRepo
+    internal static partial class CodeToStringRepo
     {
         private static readonly Dictionary<string, string> map = new Dictionary<string, string>();
 
@@ -10,12 +10,6 @@ namespace NSourceGenerators
         public static string GetText(string index)
         {
             return map[index]; 
-        }
-
-
-        static CodeToStringRepo()
-        {
-               
         }
     }
 }

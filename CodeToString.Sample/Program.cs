@@ -5,14 +5,14 @@ namespace CodeToString.Sample
     [CodeToString]
     partial class Program
     {
-        [CodeToString]       
+        [CodeToString("Main")]       
         static void Main(string[] args)
         {
-            var mainCode = CodeToStringRepo.GetText("CodeToString.Sample.Program.Main");
-            Console.WriteLine(mainCode);
-
             var programCode = CodeToStringRepo.GetText("CodeToString.Sample.Program");
             Console.WriteLine(programCode);
+
+            var mainCode = CodeToStringRepo.GetText("Main");
+            Console.WriteLine(mainCode);
         }        
     }
 }
