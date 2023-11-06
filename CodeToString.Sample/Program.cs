@@ -11,7 +11,7 @@ namespace CodeToString.Sample
             var programCode = CodeToStringRepo.GetText("CodeToString.Sample.Program");
             Console.WriteLine(programCode);
 
-            var mainCode = CodeToStringRepo.GetText("MainKey");
+            var mainCode = CodeToStringRepo.GetText("MainKey", true);
             Console.WriteLine(mainCode);
         }        
     }
