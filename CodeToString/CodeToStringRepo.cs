@@ -14,13 +14,17 @@ namespace NSourceGenerators
 
         public static string GetText(string index, bool withoutLeadingSpaces = false)
         {
-            if (withoutLeadingSpaces)
+            if (map.TryGetValue(index, out var text))
             {
-                return RemoveLeadingSpaces(map[index]);
+                if (withoutLeadingSpaces)
+                {
+                    return RemoveLeadingSpaces(text);
+                }
+                return text;
             }
-            return map[index]; 
-        }
 
+            return null;
+        }
 
 
 
